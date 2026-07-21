@@ -1,18 +1,18 @@
 import './globals.css';
-import Nav from '@/components/Nav';
-import Footer from '@/components/Footer';
+import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 
 export const metadata = {
   title: 'Panduan Digitalisasi UMKM',
-  description: 'Panduan dan generator ide pemasaran digital interaktif untuk pelaku UMKM.',
+  description: 'Panduan Praktis Digitalisasi UMKM - KKN Cigondewah Hilir',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="id">
-      <body className="min-h-screen flex flex-col bg-slate-50 text-slate-800">
+      <body className="bg-gray-50 text-gray-900 antialiased min-h-screen flex flex-col justify-between">
         <Nav />
-        <main className="flex-1 max-w-4xl mx-auto w-full px-4 py-8">
+        <main className="container mx-auto px-4 py-8 max-w-4xl flex-grow">
           {children}
         </main>
         <Footer />
